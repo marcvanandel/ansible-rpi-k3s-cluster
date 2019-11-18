@@ -1,0 +1,15 @@
+[submodule "playbooks/roles/ansible-change-hostname"]
+	path = playbooks/roles/ansible-change-hostname
+	url = https://github.com/mrlesmithjr/ansible-change-hostname.git
+[submodule "playbooks/roles/ansible-dnsmasq"]
+	path = playbooks/roles/ansible-dnsmasq
+	url = https://github.com/mrlesmithjr/ansible-dnsmasq.git
+[submodule "playbooks/roles/ansible-isc-dhcp"]
+	path = playbooks/roles/ansible-isc-dhcp
+	url = https://github.com/mrlesmithjr/ansible-isc-dhcp.git
+[submodule "playbooks/roles/ansible-ntp"]
+	path = playbooks/roles/ansible-ntp
+	url = https://github.com/mrlesmithjr/ansible-ntp.git
+[submodule "playbooks/roles/ansible-apt-cacher-ng"]
+	path = playbooks/roles/ansible-apt-cacher-ng
+	url = https://github.com/mrlesmithjr/ansible-apt-cacher-ng.git
