@@ -90,13 +90,13 @@ kubectl get pods
 
 Deploy [blinkt controller](https://github.com/apprenda/blinkt-k8s-controller) (works _almost_ out of the box! see [issue #4](https://github.com/apprenda/blinkt-k8s-controller/issues/4#issuecomment-555208803))
 
-Deploy busybox1 (red) and busybox2 (blue)
+Deploy busyboxes... :D
 
 ```
-kubectl apply -f deployments/busybox1.yaml
-kubectl apply -f deployments/busybox2.yaml
-kubectl apply -f deployments/busybox3.yaml
-kubectl apply -f deployments/busybox4.yaml
+kubectl apply -f deployments/busybox1.yaml                    blue
+kubectl apply -f deployments/busybox2.yaml                    red
+kubectl apply -f deployments/busybox3.yaml                    green
+kubectl apply -f deployments/busybox4.yaml                    yellow
 ```
 
 ## Play
