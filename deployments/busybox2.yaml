@@ -1,0 +1,27 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: busybox2
+  labels:
+    app: busybox2
+spec:
+  replicas: 8
+  selector:
+    matchLabels:
+      app: busybox2
+  template:
+    metadata:
+      labels:
+        app: busybox2
+        blinkt: show
+        blinktColor: "EF0000"
+    spec:
+      containers:
+      - image: busybox
+        command:
+          - sleep
+          - "200"
+        imagePullPolicy: IfNotPresent
+        name: busybox
+      restartPolicy: Always
