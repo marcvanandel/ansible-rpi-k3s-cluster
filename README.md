@@ -88,7 +88,7 @@ List resources ... which should be nothing ;-)
 kubectl get pods
 ```
 
-Deploy [blinkt controller](https://github.com/apprenda/blinkt-k8s-controller) (works out of the box!)
+Deploy [blinkt controller](https://github.com/apprenda/blinkt-k8s-controller) (works _almost_ out of the box! see [issue #4](https://github.com/apprenda/blinkt-k8s-controller/issues/4#issuecomment-555208803))
 
 Deploy busybox1 (red) and busybox2 (blue)
 
