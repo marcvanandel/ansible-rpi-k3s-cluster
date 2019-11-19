@@ -104,7 +104,7 @@ kubectl apply -f deployments/busybox4.yaml                    yellow
 ```
 kubectl get nodes -o wide                                           list nodes
 kubectl get pods -o wide                                            list pods
-kubectl scale --replicas=8 -f kubernetes/busybox1.yaml              scale pods
+kubectl scale --replicas=8 -f deployments/busybox1.yaml             scale pods
 ```
 
 ## Repo Set Up
