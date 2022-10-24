@@ -26,7 +26,7 @@ git clone https://github.com/mrlesmithjr/ansible-rpi-k8s-cluster.git --recurse-s
 
 First SD card
 
-Install [Rasbian OS]() with [Rufus]()
+Install [Raspberry Pi OS Lite (64-bit)](https://www.raspberrypi.com/software/operating-systems/#raspberry-pi-os-64-bit) with [Rufus](https://community.chocolatey.org/packages/rufus)
 
 ```
 sudo mount -t drvfs D: /mnt/d && touch /mnt/d/ssh && touch /mnt/d/wpa_supplicant.conf && sudo umount /mnt/d
