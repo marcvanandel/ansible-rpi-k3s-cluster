@@ -16,7 +16,18 @@ git clone https://github.com/mrlesmithjr/ansible-rpi-k8s-cluster.git --recurse-s
 
 ### Ansible
 
-> Ansible in [WSL]()
+> [Install Ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#installation-guide) in WSL
+
+```bash
+# create virtual environment '.ansible'
+virtualenv .ansible
+
+# activate virtual environment
+. .ansible/bin/activate
+
+# install ansible python via pip
+python3 -m pip install ansible
+```
 
 
 ### SD Card Writing
