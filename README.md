@@ -28,9 +28,12 @@ First SD card
 
 Install [Raspberry Pi OS Lite (64-bit)](https://www.raspberrypi.com/software/operating-systems/#raspberry-pi-os-64-bit) with [Rufus](https://community.chocolatey.org/packages/rufus)
 
+In WSL:
+
 ```
 sudo mount -t drvfs D: /mnt/d && touch /mnt/d/ssh && touch /mnt/d/wpa_supplicant.conf && sudo umount /mnt/d
 ```
+(or edit via Windows Explorer and Text Editor)
 
 `wpa_supplicant.conf`:
 
@@ -48,6 +51,8 @@ network={
 ```
 
 Other SD cards:
+
+In WSL (or create a file with Windows Explorer):
 
 ```
 sudo mount -t drvfs D: /mnt/d && touch /mnt/d/ssh && sudo umount /mnt/d
