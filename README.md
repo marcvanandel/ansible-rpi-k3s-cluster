@@ -35,39 +35,21 @@ python3 -m pip install ansible
 
 ## Raspberry Pi Cluster
 
-First SD card
+Installation is executed by a 'imager', the [Raspberry Pi Imager](https://www.raspberrypi.com/software/).
+Install the latest version and start the imager.
 
-Install [Raspberry Pi OS Lite (64-bit)](https://www.raspberrypi.com/software/operating-systems/#raspberry-pi-os-64-bit) with [Rufus](https://community.chocolatey.org/packages/rufus)
+Use the following settings:
 
-In WSL:
+- Image: Raspberry Pi OS Lite (64-bit)
+- Storage: SD Card
+- Settings:
+   - Enable SSH
+   - Set username and password (u: 'pi' / p: 'root')
+   - Configure wireless LAN _(first SD only!)_
+     - SSID: 'OpenWrt'
+     - Password: 'k8s-rpis'
 
-```
-sudo mount -t drvfs D: /mnt/d && touch /mnt/d/ssh && touch /mnt/d/wpa_supplicant.conf && sudo umount /mnt/d
-```
-(or edit via Windows Explorer and Text Editor)
-
-`wpa_supplicant.conf` (LF formatted 😉):
-
-```bash
-country=NL
-ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
-update_config=1
-
-network={
-    ssid="OpenWrt"
-    scan_ssid=1
-    psk="k8s-rpis"
-    key_mgmt=WPA-PSK
-}
-```
-
-Other SD cards:
-
-In WSL (or create a file with Windows Explorer):
-
-```
-sudo mount -t drvfs D: /mnt/d && touch /mnt/d/ssh && sudo umount /mnt/d
-```
+----
 
 Check ip-address of the first Pi (via [LuCi](http://192.168.1.1/cgi-bin/luci/admin/status/overview) active leases) and set this in `inventory/hosts.inv`.
 
