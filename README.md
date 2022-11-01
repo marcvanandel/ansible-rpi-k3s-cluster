@@ -46,7 +46,7 @@ sudo mount -t drvfs D: /mnt/d && touch /mnt/d/ssh && touch /mnt/d/wpa_supplicant
 ```
 (or edit via Windows Explorer and Text Editor)
 
-`wpa_supplicant.conf`:
+`wpa_supplicant.conf` (LF formatted 😉):
 
 ```bash
 country=NL
